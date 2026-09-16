@@ -1,0 +1,21 @@
+/* Visual system for the 44-piece published-work gallery */
+.project-grid{gap:1.35rem}
+.project{padding:0;overflow:hidden;min-height:390px;background:#fffaf1}
+.project-art{height:155px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#234f3c,#3b7359);color:#fff}
+.project-art::before,.project-art::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.28);border-radius:50%}
+.project-art::before{width:180px;height:180px;right:-58px;top:-92px}
+.project-art::after{width:110px;height:110px;left:-35px;bottom:-60px}
+.art-number{position:absolute;left:1rem;top:.8rem;font-size:.7rem;font-weight:700;letter-spacing:.14em;opacity:.78}
+.art-icon{font-family:"Playfair Display",serif;font-size:3.4rem;font-weight:600;line-height:1;text-shadow:0 8px 22px rgba(0,0,0,.16)}
+.art-label{position:absolute;right:1rem;bottom:.8rem;font-size:.65rem;font-weight:700;letter-spacing:.16em}
+.project-body{padding:1.25rem 1.35rem 1.4rem;display:flex;flex:1;flex-direction:column}
+.project .meta{align-items:flex-start}
+.project .meta span:last-child{text-align:right;max-width:55%}
+.project h3{margin:1.45rem 0 1.2rem;font-size:1.38rem}
+.project a{display:flex;justify-content:space-between;align-items:center;padding-top:.85rem;border-top:1px solid var(--line)}
+.project-news-report .project-art{background:linear-gradient(135deg,#223b50,#39708a)}
+.project-photos .project-art{background:linear-gradient(135deg,#8c542f,#d49a55)}
+.project-reels .project-art{background:linear-gradient(135deg,#5f365f,#a65f7b)}
+.project:hover .art-icon{transform:scale(1.08) rotate(-3deg);transition:transform .25s ease}
+.project:hover .project-art::before{transform:translate(-10px,10px);transition:transform .35s ease}
+@media(max-width:620px){.project{min-height:365px}.project-art{height:145px}}
