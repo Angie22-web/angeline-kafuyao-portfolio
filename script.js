@@ -48,8 +48,8 @@ const projects = [
 const grid=document.querySelector('#project-grid');const count=document.querySelector('#visible-count');const load=document.querySelector('#load-more');let filter='All',limit=9;
 const visual={"News Article":["ARTICLE","Aa"],"News Report":["REPORT","▶"],"Photos":["PHOTO STORY","◎"],"Reels":["SHORT-FORM","↗"]};
 const publisherImage={
-  "Baguio Herald Express":"https://baguioheraldexpressonline.com/wp-content/uploads/2019/03/herald-baguio-city-2.jpg",
-  "Baguio Public Information Office":"https://pbs.twimg.com/profile_images/1131044753892466688/os_r5V_R.jpg"
+  "Baguio Herald Express":"https://yt3.googleusercontent.com/ypyBxqZfe-XO6e8_55DRcM9Pa330UQ3RPnPO3sQ9Qs_11-uDrZg9va_xXHvScKe-OQCYiS9NBQ=s900-c-k-c0x00ffffff-no-rj",
+  "Baguio Public Information Office":"https://yt3.googleusercontent.com/F9MaswxGJXlf6q2kJYvevIc7Fbib9HkLPw7UtDDneghthzc3g9T3HlYKd-O-b1Zo1ubW9GLzrQ=s900-c-k-c0x00ffffff-no-rj"
 };
 function render(){const matches=projects.filter(p=>filter==='All'||p[1]===filter);grid.innerHTML=matches.slice(0,limit).map((p,i)=>{const v=visual[p[1]]||[p[1],"✦"];const image=publisherImage[p[2]];return `<article class="project project-${p[1].toLowerCase().replaceAll(' ','-')}"><div class="project-art"><span class="art-icon" aria-hidden="true">${v[1]}</span><img class="publisher-image" src="${image}" alt="${p[2]} visual" loading="lazy" onerror="this.remove()"><span class="art-number">${String(i+1).padStart(2,'0')}</span><span class="art-label">${v[0]}</span></div><div class="project-body"><div class="meta"><span>${p[1]}</span><span>${p[2]}</span></div><h3>${p[0]}</h3><a href="${p[3]}" target="_blank" rel="noreferrer">View published work <span aria-hidden="true">↗</span></a></div></article>`}).join('');count.textContent=matches.length;load.hidden=limit>=matches.length}
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelector('.filter.active').classList.remove('active');b.classList.add('active');filter=b.dataset.filter;limit=9;render()}));
