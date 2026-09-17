@@ -41,3 +41,9 @@
 .newsletter-page:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
 @media(max-width:760px){.newsletter-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.newsletter-copy{text-align:center;margin-left:auto;margin-right:auto}}
 @media(max-width:460px){.newsletter-gallery{grid-template-columns:1fr}}
+.hero-photo-card{position:relative;padding:0;overflow:hidden;background:#fff;isolation:isolate}
+.hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0}
+.hero-photo-card::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(transparent,rgba(18,30,25,.88));z-index:1}
+.hero-photo-caption{position:absolute;left:1.5rem;right:1.5rem;bottom:1.35rem;z-index:2;display:flex;flex-direction:column;gap:.25rem;color:white}
+.hero-photo-caption strong{font-family:"Playfair Display",serif;font-size:1.35rem;line-height:1.15}
+.hero-photo-caption span{font-size:.72rem;letter-spacing:.04em;color:#edf3ef}
