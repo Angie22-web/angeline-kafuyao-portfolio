@@ -47,3 +47,5 @@
 .hero-photo-caption{position:absolute;left:1.5rem;right:1.5rem;bottom:1.35rem;z-index:2;display:flex;flex-direction:column;gap:.25rem;color:white}
 .hero-photo-caption strong{font-family:"Playfair Display",serif;font-size:1.35rem;line-height:1.15}
 .hero-photo-caption span{font-size:.72rem;letter-spacing:.04em;color:#edf3ef}
+.hero-specialties{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.hero-specialties span{padding:.48rem .78rem;border:1px solid rgba(36,83,63,.3);border-radius:999px;background:rgba(255,250,241,.7);color:var(--pine);font-size:.76rem;font-weight:700;letter-spacing:.025em}
