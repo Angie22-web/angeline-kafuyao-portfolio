@@ -9,11 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="enhancements.css">
-  <style>
-    .contact-links{display:flex;justify-content:center;gap:.7rem;flex-wrap:wrap}
-    .contact .button.secondary{border-color:var(--ink);color:var(--ink)}
-  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,6 +17,7 @@
     <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Primary navigation">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#work">Selected work</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -31,24 +27,17 @@
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow">Baguio City, Philippines</p>
-        <h1>Creative content for <em>stronger brands.</em> Smart automation for <em>smoother business.</em></h1>
-        <p class="hero-intro">I’m Angeline C. Kafuyao — a communication professional, content specialist, and social media marketer creating clear, human-centered stories while expanding into AI automation.</p>
-        <div class="hero-specialties" aria-label="Professional specializations">
-          <span>Social Media Marketing</span>
-          <span>Content Specialist</span>
-          <span>AI Automation</span>
-        </div>
+        <h1>Stories rooted in <em>people, place,</em> and purpose.</h1>
+        <p class="hero-intro">I’m Angeline C. Kafuyao — a communication professional creating clear, human-centered stories through writing, reporting, social media, and multimedia production.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Explore my work</a>
           <a class="button secondary" href="https://github.com/Angie22-web" target="_blank" rel="noreferrer">GitHub profile ↗</a>
         </div>
       </div>
-      <div class="hero-card hero-photo-card" aria-label="Portrait of Angeline C. Kafuyao">
-        <img class="hero-portrait" src="assets/angeline-kafuyao-portrait.webp" alt="Angeline C. Kafuyao in professional attire">
-        <div class="hero-photo-caption">
-          <strong>Angeline C. Kafuyao</strong>
-          <span>Communication · Media · Public Information</span>
-        </div>
+      <div class="hero-card" aria-label="Portfolio summary">
+        <div class="monogram">ACK</div>
+        <p>Communication<br>Media<br>Public Information</p>
+        <span>Open to remote and Cordillera-based opportunities</span>
       </div>
     </section>
 
@@ -66,21 +55,13 @@
       </div>
     </section>
 
-    <section class="section featured-project" id="featured">
-      <div class="newsletter-copy">
-        <p class="eyebrow">Featured publication</p>
-        <h2>MBLISTTDA Newsletter</h2>
-        <p class="featured-meta">Newsletter layout · Visual communication · 6 pages</p>
-        <p>An institutional newsletter presenting Metropolitan BLISTT Development Authority programs and activities through an organized, reader-friendly publication design.</p>
-        <p class="gallery-note">Select any page to view it in full size.</p>
-      </div>
-      <div class="newsletter-gallery" aria-label="Six pages of the MBLISTTDA Newsletter">
-        <a class="newsletter-page newsletter-page-cover" href="assets/newsletter-page-1.webp" target="_blank"><img src="assets/newsletter-page-1.webp" alt="MBLISTTDA Newsletter page 1" loading="lazy"><span>Page 1</span></a>
-        <a class="newsletter-page" href="assets/newsletter-page-2.webp" target="_blank"><img src="assets/newsletter-page-2.webp" alt="MBLISTTDA Newsletter page 2" loading="lazy"><span>Page 2</span></a>
-        <a class="newsletter-page" href="assets/newsletter-page-3.webp" target="_blank"><img src="assets/newsletter-page-3.webp" alt="MBLISTTDA Newsletter page 3" loading="lazy"><span>Page 3</span></a>
-        <a class="newsletter-page" href="assets/newsletter-page-4.webp" target="_blank"><img src="assets/newsletter-page-4.webp" alt="MBLISTTDA Newsletter page 4" loading="lazy"><span>Page 4</span></a>
-        <a class="newsletter-page" href="assets/newsletter-page-5.webp" target="_blank"><img src="assets/newsletter-page-5.webp" alt="MBLISTTDA Newsletter page 5" loading="lazy"><span>Page 5</span></a>
-        <a class="newsletter-page" href="assets/newsletter-page-6.webp" target="_blank"><img src="assets/newsletter-page-6.webp" alt="MBLISTTDA Newsletter page 6" loading="lazy"><span>Page 6</span></a>
+    <section class="section experience" id="experience">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I’ve contributed</h2>
+      <div class="timeline">
+        <article><span>2025</span><div><h3>Information Officer I</h3><p>Metropolitan BLISTT Development Authority</p><small>IEC campaigns, AVPs, brochures, documentation, social content, and stakeholder events across BLISTT municipalities.</small></div></article>
+        <article><span>2024</span><div><h3>Media Intern</h3><p>Baguio City Public Information Office</p><small>News and feature packages, reels, newsletter layout, scripts, copy editing, livestream support, and weekly anchor recordings.</small></div></article>
+        <article><span>2024</span><div><h3>News Media Intern</h3><p>Baguio Herald Express</p><small>News articles and videos, field reporting, voice-over work, photography, captions, and community coverage.</small></div></article>
       </div>
     </section>
 
@@ -107,15 +88,10 @@
     </section>
 
     <section class="contact section" id="contact">
-      <p class="eyebrow">Let’s grow your business</p>
-      <h2>Need help growing your business online?</h2>
-      <p>I create strategic social media content that helps brands communicate clearly and connect with their audience. I also build practical AI automation workflows that help businesses reduce repetitive tasks and save time.</p>
-      <div class="contact-links" aria-label="Contact links">
-        <a class="button primary" href="mailto:angelinekafuyao@gmail.com">Let’s work together</a>
-        <a class="button secondary" href="https://www.facebook.com/kafuyaoangeline/" target="_blank" rel="noreferrer">Facebook ↗</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/angeline-k-bb41a9138/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a class="button secondary" href="https://github.com/Angie22-web" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </div>
+      <p class="eyebrow">Let’s work together</p>
+      <h2>Need a communicator who can write, create, coordinate, and keep learning?</h2>
+      <p>I’m open to communication, social media, administrative, content support, and automation opportunities.</p>
+      <a class="button primary" href="https://github.com/Angie22-web" target="_blank" rel="noreferrer">Connect on GitHub ↗</a>
     </section>
   </main>
 
